@@ -1,6 +1,6 @@
 import OffersList from '../offers-list/offers-list.jsx';
 
-const Main = ({ offersCount, offersTitles }) => (
+const Main = ({ offersCount, offers, handeleClick }) => (
   <div className="page page--gray page--main">
     <header className="header">
       <div className="container">
@@ -112,7 +112,7 @@ const Main = ({ offersCount, offersTitles }) => (
             */}
             </form>
 
-            <OffersList offersTitles={offersTitles} />
+            <OffersList offers={offers} handeleClick={handeleClick} />
 
           </section>
           <div className="cities__right-section">

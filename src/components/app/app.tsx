@@ -1,5 +1,7 @@
-import Main from '../main/main.tsx';
+import Main from '../main/main.jsx';
 
-const App = ({ offersCount, offersTitles }) => <Main offersCount={offersCount} offersTitles={offersTitles} />;
+const App = ({ offers, offersCount }) => (
+  <Main offers={offers} offersCount={offersCount} />
+);
 
 export default App;

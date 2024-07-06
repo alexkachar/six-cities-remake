@@ -2,16 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 import App from './components/app/app.tsx';
+import offers from './mocks/offers.js';
 
-const offersData = {
-  offersCount: 312,
-  offersTitles: [
-    'Beautiful &amp; luxurious apartment at great location',
-    'Wood and stone place',
-    'Canal View Prinsengracht',
-    'Nice, cozy, warm big bed apartment'
-  ]
-};
+const offersCount = offers.length;
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -20,8 +13,8 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <App
-      offersCount={offersData.offersCount}
-      offersTitles={offersData.offersTitles}
+      offers={offers}
+      offersCount={offersCount}
     />
   </React.StrictMode>
 );
